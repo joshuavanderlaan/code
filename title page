@@ -1,0 +1,31 @@
+-----------------------------------------------------------------------------------------
+
+-- lua
+--
+-- by joshua van der Laan
+--
+-- feb 14 2019
+
+-- to create a title page display
+
+-- 
+
+-----------------------------------------------------------------------------------------
+
+
+
+local myText = display.newText( "Joshua van der Laan", 150, 60, native.systemFont, 30 )
+
+myText:setFillColor( 50/255, 102/255, 37/255 )
+
+----------------------------------
+
+
+display.setDefault( "background", 252/255, 186/255, 3/255 )
+
+
+local image = display.newImageRect( "/assets/Dead (27).png", 500, 500 )
+
+image.x = 90
+
+image.y = 150
