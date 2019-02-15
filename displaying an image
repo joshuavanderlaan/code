@@ -1,0 +1,30 @@
+
+-----------------------------------------------------------------------------------------
+
+--lua
+
+-- 
+
+-- created by Joshua van der Laan
+
+-- feb 12 2019
+
+--To make a sprite display on screen
+
+-----------------------------------------------------------------------------------------
+
+
+
+-- Set default screen background color to blue
+
+display.setDefault( "background", 25/255, 45/255, 30/255)
+
+
+
+-- note that the image is saved in a directory ./assests/sprites/
+
+local image = display.newImageRect( "assets/Glide_000.png", 370, 370 )
+
+image.x = 160
+
+image.y = 170
