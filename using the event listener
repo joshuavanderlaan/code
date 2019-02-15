@@ -1,0 +1,53 @@
+------------------------------------------------------------------------------------------
+
+-- lua
+--
+-- by joshua van der Laan
+--
+-- feb 15 2019
+
+-- to run the event listener command
+
+-- 
+
+-----------------------------------------------------------------------------------------
+
+
+
+local myText = display.newText( "joshua van der Laan", 150, 60, native.systemFont, 30 )
+
+myText:setFillColor( 50/255, 1/255, 1/255 )
+
+-----------------------------------------------------------------------------------------------
+
+
+display.setDefault( "background", 100/255, 153/255, 87/255 )
+
+
+
+
+------------------------------------------------------------------------------------
+
+local soccerBall = display.newImageRect( "Dead (27).png", 300, 300 )
+
+soccerBall.x = display.contentCenterX
+
+soccerBall.y = display.contentCenterY
+
+soccerBall.id = "ball object"
+
+ 
+
+local function onObjectTouch( event )
+
+    -- it is not perfect, but we will make it better soon
+
+    print( "girl touched ")
+
+
+
+    return true
+
+end
+
+soccerBall:addEventListener( "touch", onObjectTouch )
