@@ -21,7 +21,7 @@ display.setDefault( "background", 25/255, 45/255, 30/255)
 
 
 
--- note that the image is saved in a directory ./assests/sprites/
+-- note that the image is saved in a directory ./assets/sprites/
 
 local image = display.newImageRect( "assets/Glide_000.png", 370, 370 )
 
